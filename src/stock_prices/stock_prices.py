@@ -13,7 +13,7 @@ def find_max_profit(prices):
     max_profit: int = prices[1] - current_min
     i = 1
     previous = []
-    print(prices)
+    print(f"initial values for {prices} \n min={current_min} \n max_profit={max_profit}")
     while i < len(prices):
         current_profit = prices[i] - current_min
         print(f"current profit {current_profit}")
