@@ -9,22 +9,22 @@ import argparse
 # You must buy first before selling; no shorting is allowed here.
 
 def find_max_profit(prices):
-    current_min: int = prices[0]
-    max_profit: int = prices[1] - current_min
-    i = 1
-    previous = []
-    print(f"initial values for {prices} \n min={current_min} \n max_profit={max_profit}")
-    while i < len(prices):
-        current_profit = prices[i] - current_min
+    price_difference: int = prices[0]
+    max_profit: int = prices[1] - price_difference
+    currentItemInListOfPrices = 1
+ #   previous = []
+    print(f"initial values for {prices} \n min={price_difference} \n max_profit={max_profit}")
+    while currentItemInListOfPrices < len(prices):
+        current_profit = prices[currentItemInListOfPrices] - price_difference
         print(f"current profit {current_profit}")
-        if current_min == 0 or prices[i] < current_min:
-            current_min = prices[i]
-            print(f"{current_min} = current_Min")
+        if price_difference == 0 or prices[currentItemInListOfPrices] < price_difference:
+            price_difference = prices[currentItemInListOfPrices]
+            print(f"{price_difference} = current_Min")
         else:
             if current_profit > max_profit:
                 max_profit = current_profit
                 print(f"{max_profit} = max_profit")
-        i += 1
+        currentItemInListOfPrices += 1
     return max_profit
 
 

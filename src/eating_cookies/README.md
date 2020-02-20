@@ -9,6 +9,19 @@ For example, for a jar of cookies with `n = 3` (the jar has 3 cookies inside it)
  3. He can eat 2 cookies, then 1 cookie
  4. He can eat 3 cookies all at once. 
 
+IIIII
+III2
+II3
+I22
+I211
+I3I
+3II
+32
+23
+221
+212
+
+
 Thus, `eating_cookies(3)` should return an answer of 4.
 
 ## Testing

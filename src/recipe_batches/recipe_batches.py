@@ -16,7 +16,7 @@ def recipe_batches(recipe:dict, ingredients:dict):
 
     ##csort should be fine
   totalCount.sort()
-
+    #hey _Minimum loops in the function itself... sorting doesn't count right? hahaha
   return totalCount[0]
 
 

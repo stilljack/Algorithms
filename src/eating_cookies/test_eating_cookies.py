@@ -1,7 +1,5 @@
 import unittest
-from src.eating_cookies import eating_cookies
-
-
+from src.eating_cookies.eating_cookies import *
 class Test(unittest.TestCase):
 
   def test_eating_cookies_small_n(self):
