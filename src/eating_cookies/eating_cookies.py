@@ -16,8 +16,6 @@ def eating_cookies(n, cache={0:1,1: 1}):
 
 
 
-
-
 def cookie_memoize(f):
     def helper(x):
         if x not in memo:
