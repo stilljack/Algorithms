@@ -7,18 +7,16 @@ import sys
 # recursive solution
 memo = {}
 
-def eating_cookies(n, cache={}):
-    res = 0
+def eating_cookies(n, cache={0:1,1: 1}):
     if n < 0:
         return 0
-    if n == 0:
-        return 1
-    elif cache and cache[n]>0:
-        return cache[n]
-    else:
-        res = eating_cookies(n-1,cache)  +eating_cookies(n-2,cache) +eating_cookies(n-3,cache)
-        cache[n] = res
-        return res
+    if n not in cache:
+        cache[n] = eating_cookies(n - 1, cache) + eating_cookies(n - 2, cache) + eating_cookies(n - 3, cache)
+    return cache[n]
+
+
+
+
 
 def cookie_memoize(f):
     def helper(x):
