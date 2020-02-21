@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+self.denominations = [1, 5, 10, 25, 50]
+
+for loop through amount
+recursive
+
+
+5  = 2 WAYS
+    5 pennies (1)
+    1 nickel (5)
+
+
+10 = 4 ways
+     1 dime (10)
+     10 pennies (1)
+     2 nickels (5)
+     5 pennies 1 nickle (5,1)
+
+20 = 9 ways
+2     20 pennies
+3     4 nickles
+9     2 nickles 10 pennies
+4     1 nickle 1 dime 5 pennies
+5     3 nickles 5 pennies
+8     1 nickle 15 pennies
+6     1 dime 2 nickles
+7     1 dime 10 pennies
+1     2 dimes
+
+range (i, 0, x) where i is iterating  x the step or the amount to iterate by
+0 5 10 15 20
+for nickes
+for dimes
+for quaters
+for halfdollars
+
+2
+5
+10
+
+
+nickles=0
+dimies=0
+quarters=0
+
+
+1 pennies always true cause x/1=1
+while i < amount:
+nickles

@@ -1,6 +1,7 @@
 # Making Change
 
-You work as a bank teller, handling people's bank transactions (this is your
+
+handling people's bank transactions (this is your
 part-time gig while you're studying at Lambda). 
 
 One day one of the wealthiest and also most eccentric patrons of the bank walks
@@ -19,6 +20,7 @@ change for 10 cents using pennies, nickels, dimes, quarters, and half-dollars:
 
  1. We can make change for 10 cents using 10 pennies
  2. We can use 5 pennies and a nickel
+ ! nickle and five pennies
  3. We can use 2 nickels
  4. We can use a single dime
 
